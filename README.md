@@ -5,7 +5,7 @@ Home: https://github.com/pharmai/plip
 
 Package license: GPL-2.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Analyze non-covalent protein-ligand interactions in 3D structures
 
