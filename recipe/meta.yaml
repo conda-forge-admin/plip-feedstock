@@ -21,11 +21,11 @@ requirements:
     - python
     - pip
   run:
-    - python
-    - future
+    - lxml
     - numpy
     - openbabel
-    - lxml
+    - pymol
+    - python
 
 test:
   imports:
