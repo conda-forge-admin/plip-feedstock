@@ -24,7 +24,6 @@ requirements:
     - lxml
     - numpy
     - openbabel
-    - pymol
     - python
 
 test:
@@ -32,9 +31,6 @@ test:
     - plip
   commands:
     - plip --help
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/pharmai/plip
