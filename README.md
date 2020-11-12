@@ -5,9 +5,13 @@ Home: https://github.com/pharmai/plip
 
 Package license: GPL-2.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plip-feedstock/blob/master/LICENSE.txt)
 
 Summary: Analyze non-covalent protein-ligand interactions in 3D structures
+
+Development: https://github.com/pharmai/plip
+
+Documentation: https://github.com/pharmai/plip/blob/master/DOCUMENTATION.md
 
 Protein-Ligand Interaction Profiler - Analyze and visualize non-covalent
 protein-ligand interactions in PDB files according to memo Salentin et al. (2015)
