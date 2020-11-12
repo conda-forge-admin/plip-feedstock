@@ -1,5 +1,5 @@
 {% set name = "plip" %}
-{% set version = "2.1.4" %}
+{% set version = "2.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 01e0508d97bc5bf44402ec433d51d2e236ee03dcf03a776485d3b5af83321dbc
+  sha256: 7110f1254702bf38156d5a3fa181b714ee948e3e0cd737a53f21e3a6523bec0e
 
 build:
   noarch: python
@@ -18,13 +18,13 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
     - lxml
     - numpy
     - openbabel
-    - python
+    - python >=3.6
 
 test:
   imports:
