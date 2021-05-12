@@ -1,5 +1,5 @@
 {% set name = "plip" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bac51963effc8688ad5e4e0bc3d316cbf93d96020c82bee8075cf67386c7ae40
+  sha256: 5d4ab019502ce3f61dd152f8da4e861ebe8dcff6c2060f7c8fbd6315513a2d0b
 
 build:
   noarch: python
