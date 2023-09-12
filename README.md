@@ -152,5 +152,6 @@ Feedstock Maintainers
 =====================
 
 * [@hadim](https://github.com/hadim/)
+* [@mikemhenry](https://github.com/mikemhenry/)
 * [@pharmai](https://github.com/pharmai/)
 
