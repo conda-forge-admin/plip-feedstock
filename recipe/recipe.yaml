@@ -1,0 +1,59 @@
+context:
+  name: plip
+  version: 2.3.1
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: 8d62c798b5ef6f3ae6ddd72e87c353bff8263e557dfa5f6ecf699cdf975f04ce
+
+build:
+  number: 0
+  noarch: python
+  script: python -m pip install . --no-build-isolation -vv
+  python:
+    entry_points:
+      - plip = plip.plipcmd:main
+
+requirements:
+  host:
+    - python ${{ python_min }}
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - lxml >=4.2.1
+    - numpy >=1.13.3
+    - openbabel >=3.0.0
+  run_constraints:
+    - ImageMagick >=7.0
+    - pymol-open-source >=2.3.0
+
+tests:
+  - python:
+      imports:
+        - plip
+      python_version: ${{ python_min }}
+  - script:
+      - plip --help
+    requirements:
+      run:
+        - python ${{ python_min }}
+
+about:
+  license: GPL-2.0-only
+  license_file: LICENSE.txt
+  summary: Analyze non-covalent protein-ligand interactions in 3D structures
+  description: |
+    Protein-Ligand Interaction Profiler - Analyze and visualize non-covalent
+    protein-ligand interactions in PDB files according to memo Salentin et al. (2015)
+  homepage: https://github.com/pharmai/plip
+  repository: https://github.com/pharmai/plip
+  documentation: https://github.com/pharmai/plip/blob/master/DOCUMENTATION.md
+
+extra:
+  recipe-maintainers:
+    - hadim
+    - mikemhenry
