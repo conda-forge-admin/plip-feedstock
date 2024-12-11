@@ -16,7 +16,6 @@ Documentation: https://github.com/pharmai/plip/blob/master/DOCUMENTATION.md
 Protein-Ligand Interaction Profiler - Analyze and visualize non-covalent
 protein-ligand interactions in PDB files according to memo Salentin et al. (2015)
 
-
 Current build status
 ====================
 
@@ -153,5 +152,4 @@ Feedstock Maintainers
 
 * [@hadim](https://github.com/hadim/)
 * [@mikemhenry](https://github.com/mikemhenry/)
-* [@pharmai](https://github.com/pharmai/)
 
