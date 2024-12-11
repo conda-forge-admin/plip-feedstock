@@ -36,7 +36,7 @@ tests:
       imports:
         - plip
       python_version: ${{ python_min }}
-      pip_check: false # it fails at detecting openbabel
+      pip_check: false # it fails at detecting openbabel. see https://github.com/conda-forge/openbabel-feedstock/issues/49
   - script:
       - plip --help
     requirements:
