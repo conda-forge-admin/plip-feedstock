@@ -36,6 +36,7 @@ tests:
       imports:
         - plip
       python_version: ${{ python_min }}
+      pip_check: false # it fails at detecting openbabel
   - script:
       - plip --help
     requirements:
